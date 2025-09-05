@@ -10,7 +10,7 @@ function prompt
 {
 	$host.UI.RawUI.WindowTitle = (Get-Item $PWD).BaseName
 	$gitbranch = Get-GitBranch
-	Write-Host "$($executionContext.SessionState.Path.CurrentLocation)" -NoNewLine 
+	Write-Host "$($PWD)" -NoNewLine 
 
 	if ($gitbranch)
 	{
